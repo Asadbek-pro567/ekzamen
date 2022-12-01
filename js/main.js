@@ -29,12 +29,16 @@ function mapper(abc){
         let newName = document.createElement('li')
         newName.innerHTML = e.name
         newName.setAttribute('class', 'user__name')
+        elBtn.setAttribute('id', a += 1)
+        let element = document.createElement('li')
+        element.innerHTML = `${e.id}`
+        element.style.color = '#fff'
+        elBtn.appendChild(element)
         elBtn.appendChild(newLI)
         elBtn.appendChild(newName)
         elul.appendChild(elBtn)
         elBtn.setAttribute('class', 'my__btn')
         
-        elBtn.setAttribute('id', a += 1)
         
         
     })
@@ -68,6 +72,11 @@ function mapper(abc){
                         newH3.innerHTML = t.title
                         newH3.setAttribute('class', 'chat')
                         newH3.classList.add('tg__blue')
+                        let element = document.createElement('li')
+                        element.innerHTML = t.id
+                        element.style.color = '#fff'
+                        element.style.marginLeft = '20px'
+                        elChat.appendChild(element)
                         elChat.appendChild(newH3)
                         let newH4 = document.createElement('li')
                         let num1 = t.userId + 1

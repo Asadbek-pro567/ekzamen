@@ -60,6 +60,7 @@ body{
     height: 650px;
     width: 300px;
     padding-top: 20px;
+    overflow-x: hidden;
 }
 .my__btn{
     display: block;
